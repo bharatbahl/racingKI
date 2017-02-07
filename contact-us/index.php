@@ -248,14 +248,14 @@ session_start();
 								<div class='site-logo-alt'>
 									<a href='../index.html'
 									title='KI Racing							'rel='home'>
-									<img src='../images/logo.png'alt='KIR'></a>
+									<img src='../wp-content/uploads/2015/05/logo_alt_dark.png' alt='KIR'></a>
 								</div><!-- End of alternate site logo -->
 
 
 								<div class='site-logo'>
 									<a href='../index.html'
 									title='KI Racing								'rel='home'>
-									<img src='../images/logo.png'alt='KIR'></a>
+									<img src='../wp-content/uploads/2015/05/logo_alt_dark.png'alt='KIR'></a>
 								</div><!-- End of site logo -->
 								
 
@@ -268,12 +268,12 @@ session_start();
 
 								<nav id="site-navigation" class="vf-nav vf-right" role="navigation">
 									<div class="menu-my-menu-container"><ul id="menu-my-menu" class="menu"><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-11"><a href="../index.html">Home</a></li>
-										<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="../about-us/index.html">About us</a></li>
-										<li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-224"><a href="../sponsors/index.html">Sponsors</a>
+										<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="../about-us/index.html">Achievements</a></li>
+										<li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-224"><a href="../sponsors/index.html">Sponsors</a>
 										</li>
-										<li id="menu-item-235" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-235"><a href="../gallery/index.html">Gallery</a>
+										<li id="menu-item-235" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-235"><a href="../gallery/index.html">Gallery</a>
 										</li>
-										<li id="menu-item-275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-275"><a href="../cars/index.html">Cars</a>
+										<li id="menu-item-275" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-275"><a href="../cars/index.html">Cars</a>
 										</li>
 										<li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="index.html">Contact us</a></li>
 										<li id="menu-item-533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-533"><a href="../team/index.html">Team</a></li>
@@ -294,13 +294,13 @@ session_start();
 							<nav class="vf-nav-mobile">
 								<span class="vf-close"><i class="icon_close_alt2"></i></span>
 								<div class="menu-my-menu-container"><ul id="menu-my-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-11"><a href="../index.html">Home</a></li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="../about-us/index.html">About us</a></li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-224"><a href="../sponsors/index.html">Sponsors</a>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="../about-us/index.html">Achievements</a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-224"><a href="../sponsors/index.html">Sponsors</a>
 									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-235"><a href="../gallery/index.html">Gallery</a>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235"><a href="../gallery/index.html">Gallery</a>
 
 									</li>
-									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-275"><a href="../cars/index.html">Cars</a>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-275"><a href="../cars/index.html">Cars</a>
 									</li>
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="index.html">Contact us</a></li>
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-533"><a href="../team/index.html">Team</a></li>
@@ -407,7 +407,7 @@ session_start();
 
 					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 						<div class="vf-col-12 vf-col-12-sm">
-							<img src="../images/logo.png" />
+							<img src="../wp-content/uploads/2015/05/logo_alt_dark.png" />
 						</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">KI Racing is a BAJA SAE team based in VIT University, Vellore. We are a bunch of creative engineering minds with the aim of taking the team to the topmost step of the podium. The team competes in the BAJA SAE Collegiate design series. Our job is to design and build a prototype of an All Terrain Vehicle (ATV) intended for sale to off-roading enthusiasts. About 30 undergraduate engineering students combine their skills and create a one-off design to be showcased in front of the whole world.</div>
 					</div>		</div><!-- #primary-sidebar -->
 
