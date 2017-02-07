@@ -44,11 +44,11 @@ $(function () // on document.ready()
           header = document.querySelector("#fixed");
             if (distanceY > shrinkOn) {
               classie.add(header,"smaller");
-              $(".span-underline").removeClass("topnav-span");
+              $(".index-page-nav .span-underline").removeClass("topnav-span");
             } else {
             if (classie.has(header,"smaller")) {
               classie.remove(header,"smaller");
-               $(".span-underline").addClass("topnav-span");
+               $(".index-page-nav .span-underline").addClass("topnav-span");
             }
           }
       });
