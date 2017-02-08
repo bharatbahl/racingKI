@@ -76,7 +76,21 @@
 			display: block;
 			margin-bottom: 20px;
 		}
+        
+	 div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center; }
+
 	</style>
+
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});
+    </script>
 
 
 	<style type="text/css">
@@ -220,8 +234,9 @@
 						<script type="text/javascript" src="../wp-content/themes/ventoux/js/modernizr.js"></script>
 
 					</head>
-
-					<div id="fixed" class="sub-header">
+<body>
+    <div id="preloader"></div>
+    <div id="fixed" class="sub-header">
 
 						<div class="vf-row vf-pr">
 							<div class="vf-col-3 vf-col-5-xs vf-col-4-sm">
