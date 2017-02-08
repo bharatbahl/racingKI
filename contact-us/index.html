@@ -95,7 +95,6 @@
 			font-size: 55px;
 			text-transform: uppercase;
 		}
-
 		.vf-caption, .vf-slider-excerpt {
 			color: #ffffff;
 			font-size: 18px;;
@@ -103,29 +102,23 @@
 			margin-bottom: 20px;
 		}
 	 div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center; }
-
 	</style>
 
 	<script type="text/javascript">
         jQuery(document).ready(function($) {  
-
 // site preloader -- also uncomment the div in the header and the css style for #preloader
 $(window).load(function(){
 	$('#preloader').fadeOut('slow',function(){$(this).remove();});
 });
-
 });
     </script>
 
 
 	<style type="text/css">
-
 		/*Typography styles*/
-
 		body {
 			color: ;
 			font-size: px;
-
 		}
 		h1,h2,h3,h4,h5,h6 {
 			color:  ;
@@ -231,7 +224,6 @@ $(window).load(function(){
 							height: 100%;
 							background: url('../wp-content/uploads/2015/05/User-Inter-Faces.jpg')  
 							repeat;  
-
 							background-attachment: fixed;
 							transform: scale(1.25);
 						}
@@ -250,8 +242,20 @@ $(window).load(function(){
 							.vf-address-background {
 								background: url('../wp-content/uploads/2015/05/mapbg.png') center right;
 								background-size: contain;
-
 							}
+							.vf_map_wrapper{
+							position: relative;
+							cursor: zoom-in;
+						}
+						.vf_map_wrapper .overlay {
+							background:rgba(0,0,0,0.2); 
+							position:absolute; 
+							width:100%;
+							height:400px; /* your iframe height */
+							top:0px;  /* your iframe height */
+							
+							transition: all 1s ease;
+						}
 						</style>
 
 						<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
@@ -404,7 +408,19 @@ $(window).load(function(){
 																<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
 															</div>
 
-<div class="vf_map_wrapper" style="height: 400px;"><script>// <![CDATA[ 
+<div class="vf_map_wrapper" style="height: 400px;">
+<div class="overlay" title="click to zoom"></div>
+<script type="text/javascript">
+ jQuery(document).ready(function($) {  
+	$(".vf_map_wrapper").click(function(){
+		$(".vf_map_wrapper .overlay").fadeOut();
+	});
+	$(".vf_map_wrapper").mouseleave(function(){
+		$(".vf_map_wrapper .overlay").fadeIn();
+	});
+});
+</script>
+<script>// <![CDATA[ 
 	function initialize() { 
 		var myLatlng = new google.maps.LatLng(12.9693,79.1559); 
 		var mapOptions = { 
@@ -420,11 +436,8 @@ $(window).load(function(){
 	google.maps.event.addDomListener(window, 'load', initialize);
 	// ]]&gt;</script>
 	<div class='map-canvas' id='contactmap'></div></div>
-
 </div><!-- End of wrapper -->
-
 </div><!-- End of wrapper -->
-
 <a href="#" id="toTop"><i class="icons arrow_carrot_up"></i></a>
 <div class="vf-footer-background">
 	
@@ -432,86 +445,62 @@ $(window).load(function(){
 		<div class="vf-row">
 			<div class="vf-col-6 vf-col-12-xs">
 				<div class="vf-row">
-
 					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 						<div class="vf-col-12 vf-col-12-sm">
 							<center> <img src="../wp-content/uploads/2015/05/logo_alt_dark.png" /></center>
 						</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">KI Racing is a BAJA SAE team based in VIT University, Vellore. We are a bunch of creative engineering minds with the aim of taking the team to the topmost step of the podium. The team competes in the BAJA SAE Collegiate design series. Our job is to design and build a prototype of an All Terrain Vehicle (ATV) intended for sale to off-roading enthusiasts. About 30 undergraduate engineering students combine their skills and create a one-off design to be showcased in front of the whole world.</div>
 					</div>		</div><!-- #primary-sidebar -->
-
 				</div>
 			</div>
-
 			<div class="vf-col-6 vf-col-12-xs">
 				<div class="vf-row">
-
 					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 						<div class="vf-col-12 vf-col-12-sm"><div class="widget-text wp_widget_plugin_box vf-address-background"><h5 align="right">GET IN TOUCH</h5><ul align="right" class="wp_widget_plugin_text"><li><i class="icons icon_pin"></i>  VIT University, Vellore</li><li>Tamil Nadu</li><li><i class="icons icon_phone"></i>&nbsp;Subhav Goel <br> +91-9087937893 <br> goelsubhav21@gmail.com
 						</li><li><i class="icons icon_mobile"></i> Sameer Awasthi <br>+91-9994525825 <br>sameer.awasthi79@gmail.com</li></ul></div></div>		</div><!-- #primary-sidebar -->
-
 					</div>
 				</div>
-
 			</div><!-- End of row -->
 		</div><!-- End of wrapper -->	
-
-
 		<div class="vf-wrapper vf-three-col-layout">
 			<div class="vf-row">
-
 				<div class="vf-col-4 vf-col-12-xs">
 					<div class="vf-row">
-
 						<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 							<div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">three column 1</div>
 						</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">three column 1</div>
 					</div>		</div><!-- #primary-sidebar -->
-
 				</div>
 			</div>
-
 			<div class="vf-col-4 vf-col-12-xs">
 				<div class="vf-row">
-
 					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 						<div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">Three column 2</div>
 					</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">three column 2</div>
 				</div>		</div><!-- #primary-sidebar -->
-
 			</div>
 		</div>
-
 		<div class="vf-col-4 vf-col-12-xs">
 			<div class="vf-row">
-
 				<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 					<div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">three column layout 3</div>
 				</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">three column layout 3</div>
 			</div>		</div><!-- #primary-sidebar -->
-
 		</div>
 	</div>
-
 </div><!-- End of row -->
 </div><!-- End of wrapper -->
-
 <div class="vf-wrapper vf-four-col-layout">
 	<div class="vf-row">
-
 		<div class="vf-col-3 vf-col-12-xs">
 			<div class="vf-row">
-
 				<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 					<div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 1</div>
 				</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 1</div>
 			</div>		</div><!-- #primary-sidebar -->
-
 		</div>
 	</div>
-
 	<div class="vf-col-3 vf-col-12-xs">
 		<div class="vf-row">
-
 			<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 				<div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 2</div>
 			</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 2</div>
@@ -519,7 +508,6 @@ $(window).load(function(){
 		
 	</div>
 </div>
-
 <div class="vf-col-3 vf-col-12-xs">
 	<div class="vf-row">
 		
@@ -527,10 +515,8 @@ $(window).load(function(){
 			<div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 3</div>
 		</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 3</div>
 	</div>		</div><!-- #primary-sidebar -->
-
 </div>
 </div>
-
 <div class="vf-col-3 vf-col-12-xs">
 	<div class="vf-row">
 		
@@ -538,15 +524,11 @@ $(window).load(function(){
 			<div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 4</div>
 		</div><div class="vf-col-12 vf-col-12-sm">			<div class="textwidget">four column 4</div>
 	</div>		</div><!-- #primary-sidebar -->
-
 </div>
 </div>
-
 </div><!-- End of row -->
 </div><!-- End of wrapper -->	
-
 <!-- Footer social media icons -->
-
 <div class="vf-wrapper vf-footer-social-links">
 	<div class="vf-row">
 		<div class="vf-col-12 vf-col-12-sm">
@@ -556,7 +538,6 @@ $(window).load(function(){
 			</div><!-- End of column -->
 		</div><!-- End of row -->
 	</div><!-- End of wrapper -->
-
 	<!-- Footer copyright notice -->
 	<div class="vf-wrapper">
 		<div class="vf-row">
@@ -572,7 +553,6 @@ $(window).load(function(){
 		</div><!-- End of row -->
 	</div><!-- End of wrapper -->
 </div><!-- End of footer background wrapper -->
-
 <script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
 <script type='text/javascript'>
 	/* <![CDATA[ */
