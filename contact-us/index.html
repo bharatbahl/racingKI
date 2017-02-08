@@ -45,6 +45,37 @@
 		window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/ventoux.vidall.co.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}};
 		!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
 	</script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_f1AdlBa3JbWdREePKNEQy");
+   })();
+ 
+  
+   
+
+  
+			
+			
+function h(){
+	var name_var=$("#name").val();
+	var email_var=$("#email").val();
+	var subject_var=$("#subject").val();
+	var message_var=$("#message").val();
+
+			emailjs.send("shivikayashivi@gmail.com","one",{name: name_var ,email: email_var, subject:subject_var,message:message_var})
+			.then(function(response) {
+				alert("Thank you for contacting us. We will get back to you soon.");
+				console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+			}, function(err) {
+				alert("There was an error");
+				console.log("FAILED. error=", err);
+			});
+		}
+
+
+</script>
 	<style type="text/css">
 		img.wp-smiley,
 		img.emoji {
@@ -393,7 +424,7 @@ $(window).load(function(){
 										<div class="vf-col-9 vf-col-12-xs">
 
 											<div class="screen-reader-response"></div>
-											<form action="contact.php" method="post" class="wpcf7-form">
+											
 												<div style="display: none;">
 													<input type="hidden" name="_wpcf7" value="486" />
 													<input type="hidden" name="_wpcf7_version" value="4.5" />
@@ -403,15 +434,15 @@ $(window).load(function(){
 												</div>
 												
 												<p>Your Name (required)<br />
-													<span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required /></span> </p>
+													<span class="wpcf7-form-control-wrap your-name"><input type="text" name="name" id="name"value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required /></span> </p>
 													<p>Your Email (required)<br />
-														<span class="wpcf7-form-control-wrap your-email"><input type="email" required name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
+														<span class="wpcf7-form-control-wrap your-email"><input type="email" id="email"required name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
 														<p>Subject (required)<br />
-															<span class="wpcf7-form-control-wrap your-subject"><input type="text" required name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </p>
+															<span class="wpcf7-form-control-wrap your-subject"><input type="text" id="subject"required name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </p>
 															<p>Your Message<br />
-																<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
-																<p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit vt-submit" /></p>
-																<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+																<span class="wpcf7-form-control-wrap your-message"><textarea id="message"name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+																<p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit vt-submit" onclick="h()"/></p>
+																<div class="wpcf7-response-output wpcf7-display-none"></div></div>
 															</div>
 
 <div class="vf_map_wrapper" style="height: 400px;">
