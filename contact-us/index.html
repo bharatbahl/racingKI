@@ -59,7 +59,7 @@
 <script src="jquery.buttonLoader.js"></script>
 <script type="text/javascript">
    (function(){
-      emailjs.init("user_f1AdlBa3JbWdREePKNEQy");
+      emailjs.init("user_9mG4YJxxk3emB1NwfaiYH");
    })();
  
   
@@ -73,8 +73,25 @@ function h(){
 	var email_var=$("#email").val();
 	var subject_var=$("#subject").val();
 	var message_var=$("#message").val();
-
-			emailjs.send("shivikayashivi@gmail.com","one",{name: name_var ,email: email_var, subject:subject_var,message:message_var})
+			if(name_var=="")
+			{
+				alert("Please fill the required fields");
+			}
+			else if(email_var=="")
+			{
+				alert("Please fill the required fields");
+			}
+			else if(subject_var=="")
+			{
+				alert("Please fill the required fields");
+			}
+			else if(message_var=="")
+			{
+				alert("Please fill the required fields");
+			}
+			else
+			{
+			emailjs.send("gmail","one",{name: name_var ,email: email_var, subject:subject_var,message:message_var})
 			.then(function(response) {
 				alert("Thank you for contacting us. We will get back to you soon.");
 				console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
@@ -82,7 +99,7 @@ function h(){
 				alert("There was an error");
 				console.log("FAILED. error=", err);
 			});
-		}
+		}}
 
 $(document).ready(function () {
     
@@ -123,6 +140,7 @@ $(document).ready(function () {
 		}
 	</style>
 	<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles11b8.css?ver=4.5' type='text/css' media='all' />
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
