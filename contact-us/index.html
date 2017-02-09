@@ -91,8 +91,31 @@ function h(){
 			}
 			else
 			{
+				$(document).ready(function () {
+    
+   
+        var btn = $('.has-spinner');
+        $(btn).buttonLoader('start');
+        setTimeout(function () {
+            $(btn).buttonLoader('stop');
+        }, 3000);
+    
+});
+
 			emailjs.send("gmail","one",{name: name_var ,email: email_var, subject:subject_var,message:message_var})
 			.then(function(response) {
+				$(document).ready(function () {
+    
+    
+       
+        setTimeout(function () {
+            $("#name").val('');
+  $("#email").val('');
+    $("#subject").val('');
+             $("#message").val('');
+        }, 100);
+   
+});
 				alert("Thank you for contacting us. We will get back to you soon.");
 				console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 			}, function(err) {
@@ -101,29 +124,8 @@ function h(){
 			});
 		}}
 
-$(document).ready(function () {
-    
-    $('.has-spinner').click(function () {
-        var btn = $(this);
-        $(btn).buttonLoader('start');
-        setTimeout(function () {
-            $(btn).buttonLoader('stop');
-        }, 3000);
-    });
-});
 
-$(document).ready(function () {
-    
-    $('.has-spinner').click(function () {
-       
-        setTimeout(function () {
-            $("#name").val('');
-  $("#email").val('');
-    $("#subject").val('');
-             $("#message").val('');
-        }, 3000);
-    });
-});
+
 </script>
 	<style type="text/css">
 		img.wp-smiley,
